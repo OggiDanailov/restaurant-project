@@ -19,6 +19,7 @@ end
 
 get '/menu' do 
   @current_page = 'menu'
+  @title = 'menu'
   erb :menu
 end
 
