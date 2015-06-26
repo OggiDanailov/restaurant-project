@@ -1,12 +1,75 @@
 
+/*home background image*/
 body.home {
-  background-image: url(images/barphoto4.jpg);
-
+  width: 100%;
+  background: url(images/barphoto4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body.menu {
-  
+/*nav bar -- all pages*/
+nav#footer {
+	margin-bottom: 0px;
+	position: fixed;
+}
+#footer {
+	/*margin: 0 auto;*/
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);	
 }
 
-  
 
+}
+/*nav*/
+#footer li {
+	display: inline;
+	
+}
+/*nav*/
+#footer li a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 2.1875em;
+	font-weight: 400;
+	padding-right: 50px;
+}
+/*home bar name*/
+.home #logo h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 12.5em;
+	font-weight: 300;
+	color: rgba(0,0,0,0.7);
+	text-align: right;
+	
+}
+/*home bar name container*/
+.home #logo_container {
+	/*margin: 0 auto;
+	margin-top: 100px;
+	width: 200px;
+	/*background-color: rgba(0,0,0,0.4);*/
+}
+
+
+
+
+
+
+
+
+
+
+
+/*#image {*/
+  
+ /*background-image: url(images/barphoto6.jpg); */
+ /*background-repeat: no-repeat; */
+/*  margin: 0px 400px 0px 0px;*/
+  /*border-radius: 20px;*/
+  /*border: 4px solid black;*/
+
+ /* }*/
