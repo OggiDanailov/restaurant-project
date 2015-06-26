@@ -4,7 +4,8 @@ require 'mandrill'
 
 get '/' do
   @current_page = 'home'
-	erb :home
+  @title = "Home"
+  erb :home
 end
 
 get '/gallery' do 

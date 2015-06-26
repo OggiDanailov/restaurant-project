@@ -2,14 +2,35 @@
 <html>
 <head>
  <title><%= @title || "My site" %> </title>
- <link rel="stylesheet" type="text/css" href="main.css">
+ 
+	 <!-- Google Fonts -->
+	 <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300,200' rel='stylesheet' type='text/css'>
+	 
+	 <!-- Link to main css -->
+	 <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
+
+<!-- footer nav bar for all pages -->
+	<nav id="footer">
+		<ul>
+			<li><a href="home.erb">HOME</a></li>
+			<li><a href="gallery.erb">GALLERY</a></li>
+			<li><a href="menu.erb">MENU</a></li>
+			<li><a href="contact.erb">CONTACT</a></li>
+			
+		</ul>
+	</nav>
+
+
+<!-- @ connects to pages currently on -->
 <body class=<%= @current_page %>>
+
 
  <%= yield %>
 
 </body>
 
+	
 
 </html>
