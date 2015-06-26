@@ -1,11 +1,71 @@
 
+/*home background image*/
 body.home {
-  background-image: url(images/barphoto4.jpg);
-
+  width: 100%;
+  background: url(images/barphoto4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/*nav bar -- all pages*/
+nav#footer {
+	margin-bottom: 0px;
+	position: fixed;
+}
+#footer {
+	/*margin: 0 auto;*/
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);	
+}
+<<<<<<< HEAD
 body.menu {
+=======
+/*nav*/
+#footer ul {
+	list-style: none;
+>>>>>>> home page background set. Nav bar design set. Bar logo added.
 
 }
+/*nav*/
+#footer li {
+	display: inline;
+	
+}
+/*nav*/
+#footer li a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 2.1875em;
+	font-weight: 400;
+	padding-right: 50px;
+}
+/*home bar name*/
+.home #logo h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 12.5em;
+	font-weight: 300;
+	color: rgba(0,0,0,0.7);
+	text-align: right;
+	
+}
+/*home bar name container*/
+.home #logo_container {
+	/*margin: 0 auto;
+	margin-top: 100px;
+	width: 200px;
+	/*background-color: rgba(0,0,0,0.4);*/
+}
+
+
+
+
+
+
+
 
 
 
