@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
-# require 'mandrill-api'
+require 'mandrill'
 
 get '/' do
 	@header="Hello World"
@@ -8,13 +8,26 @@ get '/' do
 end
 
 get '/gallery' do 
-erb :gallery
+  erb :gallery
 end
 
 get '/contact' do 
-erb :contact
+  erb :contact
 end
 
 get '/menu' do 
-erb :menu
+  erb :menu
+end
+
+get 'send-reservation' do 
+  mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
+  message = {to: [{"type"  => "to"
+                   "email" => "TheirEmailAddress@Here.com"
+                   "name"  => "to name"}],
+              subject: "reservation confirmation"
+              from: "OurEmailAddress@Here.com"
+              text: "you are confirmed for your reservation!"}
+
+  puts mandrill.messages.send(message)
+
 end
