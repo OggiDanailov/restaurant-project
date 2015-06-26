@@ -8,6 +8,10 @@ body.home {
 }
 
 /*nav bar -- all pages*/
+nav#footer {
+	margin-bottom: 0px;
+	position: fixed;
+}
 #footer {
 	/*margin: 0 auto;*/
 	text-align: center;
@@ -31,18 +35,18 @@ body.home {
 	text-decoration: none;
 	color: white;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 35px;
+	font-size: 2.1875em;
 	font-weight: 400;
 	padding-right: 50px;
 }
 /*home bar name*/
 .home #logo h1 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 200px;
+	font-size: 12.5em;
 	font-weight: 300;
 	color: rgba(0,0,0,0.7);
 	text-align: right;
-	/*margin-right: 120px;*/
+	
 }
 /*home bar name container*/
 .home #logo_container {
@@ -50,9 +54,9 @@ body.home {
 	margin-top: 100px;
 	width: 200px;
 	/*background-color: rgba(0,0,0,0.4);*/
-
-
 }
+
+
 
 
 
