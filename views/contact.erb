@@ -1,13 +1,16 @@
-<!doctype html>
-<html>
-
 <HEAD>
-  <link rel="stylesheet" type="text/css" href="contact.css">
-  <title></title>
+  <!-- <link rel="stylesheet" type="text/css" href="contact.css"> -->
+  <title><%= @title %></title>
 </HEAD>
 
 <body>
+<h3>Make reservation here</h3>
 
+<form method="post" action="/reservation" class="form">    <textarea name="user_message"></textarea>
+    <button type="submit" href="contact">Submit</button>
+  </form>
 </body>
 
-</html>
+
+
+

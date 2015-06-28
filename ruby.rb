@@ -24,15 +24,42 @@ get '/menu' do
   erb :menu
 end
 
-# get 'send-reservation' do 
-#   mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
-#   message = {to: [{"type"  => "to"
-#                    "email" => "TheirEmailAddress@Here.com"
-#                    "name"  => "to name"}],
-#               subject: "reservation confirmation"
-#               from: "OurEmailAddress@Here.com"
-#               text: "you are confirmed for your reservation!"}
+get '/reservation' do
+  @current_page = 'reservation'
+  @title = 'reservation'
+  @user_message = params["user_message"]
+  erb :contact_confirmation
+end
 
-#   puts mandrill.messages.send(message)
+post '/reservation' do 
+  puts params.inspect
+  user_message = params["user_message"]
+  email = params["stephanierenee.mathison@gmail.com"]
+  message = params["message"]
+  mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
+    message = {
+              :subject=> "Reservation Confirmation",
+              :to=> [{
+                      :email=> "stephanierenee.mathison@gmail.com",
+                      :name=> "Bar OSA",
+                    }],
+              :from_email=> "stephanierenee.mathison@gmail.com",
+              :message=>"you are confirmed for your reservation! #{user_message}"}
 
-# end
+  sending = mandrill.messages.send(message)
+  puts sending
+  redirect to('/reservation')
+end
+
+post '/reservation' do
+  @current_page = 'reservation'
+  @title = 'reservation'
+  @user_message = params["user_message"]
+  erb :contact_confirmation
+end
+
+
+
+
+
+
