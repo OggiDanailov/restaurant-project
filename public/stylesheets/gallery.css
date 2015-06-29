@@ -2,16 +2,24 @@
   margin: 0; padding: 0;
 }
 
+body{
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 .container {
   width: 1000px;
   overflow: hidden;
   margin: 50px auto;
-  border: dotted 5px red;
 }
 
 .carousel {
   height: 400px;
-  width: 3550px;
+  width: 4000px;
   /*margin: 50px auto;
   overflow: hidden;
   
@@ -21,7 +29,23 @@
   /*margin-top: 150px;
   border: solid 5px blue;*/
 }
+/*
+#first {
+  height: 400px;
+  width: 1080px;
+}
 
+#second {
+  height: 400px;
+  width: 450px;
+}
+
+#third {
+  height: 400px;
+  width: 1200px;
+}
+
+*/
 .first {
     -webkit-animation: bannermove 30s linear infinite;
        -moz-animation: bannermove 30s linear infinite;
