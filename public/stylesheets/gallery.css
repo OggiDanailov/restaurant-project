@@ -1,0 +1,105 @@
+* {
+  margin: 0; padding: 0;
+}
+
+body{
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container {
+  width: 1000px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.carousel {
+  height: 400px;
+  width: 4000px;
+  /*margin: 50px auto;
+  overflow: hidden;
+  
+
+  /*color: blue;*/
+  /*The color attribute above is only used for text only*/
+  /*margin-top: 150px;
+  border: solid 5px blue;*/
+}
+/*
+#first {
+  height: 400px;
+  width: 1080px;
+}
+
+#second {
+  height: 400px;
+  width: 450px;
+}
+
+#third {
+  height: 400px;
+  width: 1200px;
+}
+
+*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
